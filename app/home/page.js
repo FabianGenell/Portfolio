@@ -14,7 +14,7 @@ export default function Home() {
           <span>Hi , I’m</span><br />
           Fabian<br />Genell
         </h1>
-        <button>Contact</button>
+        <a className={styles.button}>Contact</a>
       </section>
 
       <section className={styles.projects}>
@@ -44,6 +44,9 @@ export default function Home() {
 
       <nav className={styles.contact}>
         <h2>contact</h2>
+        <a href='mailto:fabian.genell@hyperisland.se' className={styles.button}>Email</a>
+        <a href='https://github.com/FabianGenell/' className={styles.button}>Github</a>
+        <a href='https://www.linkedin.com/in/fabian-genell-0a4686246/' className={styles.button}>LinkedIn</a>
       </nav>
     </main>
   )

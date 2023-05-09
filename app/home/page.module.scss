@@ -4,14 +4,13 @@ main.main {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  background-image: url('/assets/background.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  max-width: 90vw;
+  margin: 0 auto;
 
-  gap: 120px;
-  // > *:not(:first-child) {
-  //   margin-top: 120px;
-  // }
+  > *:not(:first-child) {
+    margin-top: 120px;
+    width: 100%;
+  }
 
   h1 {
     font-size: 22vw;
@@ -24,6 +23,24 @@ main.main {
 
   h2 {
     font-size: 15vw;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: none;
+    outline: none;
+
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
 }
@@ -32,16 +49,21 @@ main.main {
 section.hero {
   display: flex;
   flex-direction: column;
+  gap: 30px;
+
+
+
+
 }
 
 
 section.about {
   display: flex;
   flex-direction: column;
-  
-  p {
-    margin: 35px 0;
-  }
+  gap: 35px;
+  // p {
+  //   margin: 35px 0;
+  // }
 
   img {
     border-radius: 60px;
@@ -50,4 +72,16 @@ section.about {
     max-width: 100%;
   }
 
+}
+
+nav.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 50px;
+
+
+  .button {
+    padding: 25px;
+  }
 }
