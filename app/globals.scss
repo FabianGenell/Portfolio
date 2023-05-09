@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Sugarpunch';
+  src: url('/fonts/Sugarpunch.otf');
+}
+
+$background-color: #1B1B1B;
+$text-color: #FFF;
+$opposite-text-color: #151515;
+$highlight-color: #6E1FD1;
+
+$heading-font: 'Sugarpunch';
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: $background-color;
+  font-size: 20px;
+}
+
+body {
+  color: $text-color;
+}
+
+h1,h2 {
+  font-family: $heading-font;
+  text-align: center;
+  line-height: 1.25;
+  letter-spacing: 0.15em;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

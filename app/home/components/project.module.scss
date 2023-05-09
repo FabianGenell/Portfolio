@@ -1,0 +1,25 @@
+div.project {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    margin-top: 50px;
+    img {
+        width: auto;
+        height: auto;
+        border-radius: 13px;
+    }
+
+    h3 {
+        font-size: 16vw;
+    }
+
+    .textbox {
+        margin: 25px 0;
+
+        :not(:first-child){
+            margin-top: 5px;
+        }
+    }
+}
+
+
