@@ -52,6 +52,7 @@ main.main {
     justify-content: center;
     gap: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
   }
 
 }
@@ -88,16 +89,26 @@ section.hero {
 section.about {
   display: flex;
   flex-direction: column;
-  gap: 35px;
-  // p {
-  //   margin: 35px 0;
-  // }
+
+    .aboutSection {
+      display: flex;
+      flex-direction: row;
+      gap: 0px;
+
+        p,img {
+            margin: 10px 0;
+          }
+        :first-child {
+          // order: 1;
+        }
+    }
 
   img {
     border-radius: 60px;
     width: auto;
     height: auto;
     max-width: 100%;
+    max-width: 500px;
   }
 
   ul {
@@ -136,14 +147,14 @@ nav.contact {
 }
 
 
-@media  (min-width: 1500px){
+@media  (min-width: 1100px){
   main.main {
     max-width: 1300px;
     margin-top: 150px;
     gap: 200px;
 
     h1 {
-      font-size: 130px;
+      font-size: 9vw;
 
       span {
         font-size: 50px;
@@ -165,12 +176,34 @@ nav.contact {
         flex-direction: row;
         justify-content: space-between;
         align-items: end;
-
+        gap: 20px
       }
 
       .videoContainer {
         max-width: 55%;
       }
+    }
+
+    section.projects {
+      display: flex;
+      flex-direction: column;
+
+      > div:nth-child(odd){
+        flex-direction: row-reverse;
+
+      }
+    }
+
+    section.about {
+      .aboutSection{
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        
+      }
+
+
     }
 
   }
