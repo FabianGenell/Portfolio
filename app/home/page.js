@@ -3,23 +3,86 @@ import styles from './page.module.scss'
 import Sugarpunch from 'next/font/local'
 import Project from './components/projects'
 
-const sugarpunch = Sugarpunch({ src: '../../public/fonts/Sugarpunch.otf' })
+import { SiJavascript, SiCss3, SiHtml5, SiNodedotjs, SiPostgresql, SiReact, SiTypescript, SiWebgl, SiShopify, SiSass, SiGithub, SiLinkedin } from 'react-icons/si'
+import { MdEmail } from 'react-icons/md'
+const sugarpunch = Sugarpunch({ src: '../../public/fonts/Sugarpunch.otf' });
+
+const projects = [
+  {
+    title: 'HyperBattle',
+    description: 'A 2D fighting game with animations and multiple attacks. Made with JavaScript and the HTML canvas element.',
+    image: '/img/projects/hyperbattle/jungle.png',
+    technologies: [SiJavascript, SiCss3, SiHtml5],
+    live: undefined,
+    github: 'https://github.com/munnizashah/HyperBattle',
+  },
+  {
+    title: 'To-Do App',
+    description: 'A simple to-do app where i built a full backend with all CRUD operations needed as well as a full user authentication system.',
+    image: '/img/projects/todo/todos.png',
+    technologies: [SiNodedotjs, SiPostgresql, SiReact],
+    live: undefined,
+    github: 'https://github.com/FabianGenell/todo-fullstack',
+  },
+  {
+    title: 'Kaleidoscope',
+    description: 'A kalidoscope generator built using GLSL code as well as React and Typescript.',
+    image: '/img/projects/kaleidoscope/kaleidoscope.png',
+    technologies: [SiReact, SiTypescript, SiWebgl],
+    live: undefined,
+    github: 'https://github.com/FabianGenell/kaleidoscope-generator',
+  },
+  {
+    title: 'Classified App',
+    description: 'A client project made with React Naive. NDA signed.',
+    image: '/img/projects/classified/list.PNG',
+    technologies: [SiReact],
+    live: undefined,
+    github: undefined,
+  },
+  {
+    title: 'Shopify Theme',
+    description: 'A shopify theme made for a single product store. Made with Shopify Liquid.',
+    image: '/img/projects/heltra/computer.png',
+    technologies: [SiShopify, SiSass],
+    live: undefined,
+    github: undefined,
+  },
+]
 
 export default function Home() {
   return (
     <main className={styles.main}>
 
       <section className={styles.hero}>
-        <h1>
-          <span>Hi , I’m</span><br />
-          Fabian<br />Genell
-        </h1>
-        <a className={styles.button}>Contact</a>
+        <div className={styles.mainContainer}>
+          <h1>
+            <span>Hi , I’m</span><br />
+            Fabian<br />Genell
+          </h1>
+
+          <div className={styles.videoContainer}>
+            <iframe
+              title="vimeo-player"
+              src='https://player.vimeo.com/video/818308141?h=8290f6d177'
+              frameborder="0"
+              allowfullscreen
+              className={styles.video}
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <a className={styles.button}>Contact Me</a>
+
       </section>
 
       <section className={styles.projects}>
         <h2>projects</h2>
-        <Project />
+        {projects.map((project, index) => <Project key={index} project={project}>
+          {project.technologies.map((Element, index) => <Element key={index} size={27} />)}
+        </Project>)}
+
       </section>
 
       <section className={styles.about}>
@@ -29,24 +92,27 @@ export default function Home() {
         <p>But, I’ve actually been coding since I was 12 when I wanted upgrade my minecraft server so I was forced to dive in to Java.</p>
         <p>Although I didn’t touch code for a couple of years I’ve found my way back but this time to web development.</p>
         <Image src='/img/fabian/jamtland.jpg' width={500} height={300} alt="Fabian Genell i  natur" />
-        <strong>Outside of coding I enjoy</strong>
-        <ul>
-          <li>Documentary Film</li>
-          <li>Photography</li>
-          <li>Exercising</li>
-          <li>Muay Thai</li>
-          <li>Sales & Marketing</li>
-          <li>Business</li>
-        </ul>
+        <div>
+          <strong>Outside of coding I enjoy</strong>
+          <ul>
+            <li>Documentary Film</li>
+            <li>Photography</li>
+            <li>Exercising</li>
+            <li>Muay Thai</li>
+            <li>Sales & Marketing</li>
+            <li>Business</li>
+          </ul>
+        </div>
+
 
 
       </section>
 
       <nav className={styles.contact}>
         <h2>contact</h2>
-        <a href='mailto:fabian.genell@hyperisland.se' className={styles.button}>Email</a>
-        <a href='https://github.com/FabianGenell/' className={styles.button}>Github</a>
-        <a href='https://www.linkedin.com/in/fabian-genell-0a4686246/' className={styles.button}>LinkedIn</a>
+        <a href='mailto:fabian.genell@hyperisland.se' className={styles.button}> <MdEmail /> Email</a>
+        <a href='https://github.com/FabianGenell/' className={styles.button}> <SiGithub /> Github</a>
+        <a href='https://www.linkedin.com/in/fabian-genell-0a4686246/' className={styles.button}><SiLinkedin /> LinkedIn</a>
       </nav>
     </main>
   )

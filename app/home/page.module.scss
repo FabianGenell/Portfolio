@@ -1,16 +1,23 @@
 main.main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  max-width: 90vw;
+  width: 90vw;
+  max-width: 800px;
   margin: 0 auto;
+  gap: 120px;
 
-  > *:not(:first-child) {
-    margin-top: 120px;
+  > * {
     width: 100%;
   }
+
+  // > *:not(:first-child) {
+  //   margin-top: 120px;
+  // }
+
 
   h1 {
     font-size: 22vw;
@@ -28,18 +35,22 @@ main.main {
 
   .button {
     width: 100%;
+    max-width: 500px;
     padding: 20px;
     border-radius: 12px;
+
     font-size: 22px;
     font-weight: 600;
+    text-align: center;
+
     background-color: white;
     color: black;
-    text-align: center;
     border: none;
     outline: none;
 
     display: flex;
     justify-content: center;
+    gap: 15px;
     font-family: Arial, Helvetica, sans-serif;
   }
 
@@ -49,9 +60,26 @@ main.main {
 section.hero {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  align-items: center;
+  gap: 60px;
 
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
+  .videoContainer {
+    width: 100%;
+    min-width: 270px;
+
+    .video {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+    }
+  }
 
 
 }
@@ -72,6 +100,10 @@ section.about {
     max-width: 100%;
   }
 
+  ul {
+    margin-left: 30px;
+  }
+
 }
 
 nav.contact {
@@ -83,5 +115,63 @@ nav.contact {
 
   .button {
     padding: 25px;
+  }
+}
+
+
+@media  (min-width: 850px){
+    main.main {
+      h1 {
+        font-size: 22vb;
+
+        span {
+          font-size: 7vb;
+        }
+      }
+
+      h2 {
+        font-size: 15vb;
+      }
+    }
+}
+
+
+@media  (min-width: 1500px){
+  main.main {
+    max-width: 1300px;
+    margin-top: 150px;
+    gap: 200px;
+
+    h1 {
+      font-size: 130px;
+
+      span {
+        font-size: 50px;
+      }
+    }
+
+    h2 {
+      font-size: 90px;
+    }
+
+    section.hero {
+      align-items: start;
+      gap: 5px;
+      .button {
+        width: 310px;
+      }
+
+      .mainContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+
+      }
+
+      .videoContainer {
+        max-width: 55%;
+      }
+    }
+
   }
 }
