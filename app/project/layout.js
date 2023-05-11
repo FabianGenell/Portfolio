@@ -1,6 +1,7 @@
+import styles from './projectpage.module.scss'
 
-export default function RootLayout({ children }) {
+export default function ProjectLayout({ children }) {
     return (
-        <div>test123 {children}</div>
+        <main className={styles.projectpage}>{children}</main>
     )
 }

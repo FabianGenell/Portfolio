@@ -32,7 +32,7 @@ const projects = [
     description: 'A kalidoscope generator built using GLSL code as well as React and Typescript.',
     image: '/img/projects/kaleidoscope/kaleidoscope.png',
     technologies: [SiReact, SiTypescript, SiWebgl],
-    live: undefined,
+    live: 'http://kaleidoscope.fabiangenell.com/',
     github: 'https://github.com/FabianGenell/kaleidoscope-generator',
   },
   {
@@ -84,8 +84,7 @@ export default function Home() {
 
       <section className={styles.projects}>
         <h2>projects</h2>
-        {projects.map((project, index) => <Project key={index} project={project}>
-        </Project>)}
+        {projects.map((project, index) => <Project key={index} project={project} />)}
 
       </section>
 

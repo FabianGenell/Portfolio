@@ -23,8 +23,8 @@ export default function Project({ project, children }) {
             </div>
             <div className={styles.buttonbox}>
                 <div className={styles.buttonContainer}>
-                    {project.live && <a className={styles.button} href={project.live}>VIEW LIVE VERSION</a>}
-                    {project.github && <a className={styles.button} href={project.github}> <FaGithubSquare size='20px' /> GITHUB REPO</a>}
+                    {project.live && <a className={styles.button} target='_blank' href={project.live}>VIEW LIVE VERSION</a>}
+                    {project.github && <a className={styles.button} target='_blank' href={project.github}> <FaGithubSquare size='20px' /> GITHUB REPO</a>}
                 </div>
                 <div className={styles.iconContainer}>
                     {project.technologies.map((Element, index) => <Element key={index} size={27} />)}

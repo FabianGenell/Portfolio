@@ -1,9 +1,17 @@
+@font-face {
+  font-family: 'Sugarpunch';
+  src: url('/fonts/Sugarpunch.otf');
+}
+$heading-font: 'Sugarpunch';
+
+
+
+
 main.main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  align-items: center;
   min-height: 100vh;
   width: 90vw;
   max-width: 800px;
@@ -12,6 +20,14 @@ main.main {
 
   > * {
     width: 100%;
+  }
+
+  h1,h2 {
+    font-family: $heading-font;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.25;
+    letter-spacing: 0.15em;
   }
 
   // > *:not(:first-child) {

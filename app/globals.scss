@@ -11,7 +11,6 @@ $text-color: #FFF;
 $opposite-text-color: #151515;
 $highlight-color: #6E1FD1;
 
-$heading-font: 'Sugarpunch';
 
 
 * {
@@ -35,13 +34,6 @@ body {
   color: $text-color;
 }
 
-h1,h2 {
-  font-family: $heading-font;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1.25;
-  letter-spacing: 0.15em;
-}
 
 
 a {
@@ -54,6 +46,6 @@ a {
   html,
   body {
     background-image: url('/assets/background-desktop.svg');
-    background-size: contain;
+    background-size: cover;
   }
 }
