@@ -1,3 +1,15 @@
+nav {
+    .backLink{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px 20px 0;
+        gap: 5px;
+    }
+}
+
 main.projectpage {
     display: flex;
     flex-direction: column;
@@ -13,6 +25,8 @@ main.projectpage {
         border-radius: 13px;
 
     }
+
+
 
     .textRow {
         display: flex;
@@ -41,17 +55,6 @@ main.projectpage {
     }
 }
 
-
-// @media  (min-width: 800px){
-//     main.projectpage {
-//         .textRow{
-//             h3 {
-//                 font-size: 12vb;
-//             }
-//         }
-//     }
-
-// }
 
 @media  (min-width: 1100px){
     main.projectpage {

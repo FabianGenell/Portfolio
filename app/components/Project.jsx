@@ -30,7 +30,7 @@ export default function Project({ project, children }) {
                     {project.technologies.map((Element, index) => <Element key={index} size={27} />)}
                 </div>
             </div>
-            <Link href={`/project/${project.slug}`} className={styles.moreInfo}>MORE INFO <BiRightArrowAlt size={20} /></Link>
+            {project.slug && <Link href={`/project/${project.slug}`} className={styles.moreInfo}>MORE INFO <BiRightArrowAlt size={20} /></Link>}
         </div>
     </div>
 }
