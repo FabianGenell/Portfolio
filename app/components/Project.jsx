@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './project.module.scss'
 import { FaGithubSquare } from 'react-icons/fa'
 import { BiRightArrowAlt } from 'react-icons/bi'
@@ -26,13 +27,10 @@ export default function Project({ project, children }) {
                     {project.github && <a className={styles.button} href={project.github}> <FaGithubSquare size='20px' /> GITHUB REPO</a>}
                 </div>
                 <div className={styles.iconContainer}>
-                    {children}
+                    {project.technologies.map((Element, index) => <Element key={index} size={27} />)}
                 </div>
             </div>
-            <a href="" className={styles.moreInfo}>MORE INFO <BiRightArrowAlt size={20} /></a>
-
+            <Link href={`/project/${project.slug}`} className={styles.moreInfo}>MORE INFO <BiRightArrowAlt size={20} /></Link>
         </div>
-
-
     </div>
 }

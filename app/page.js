@@ -1,15 +1,16 @@
 import Image from 'next/image'
 import styles from './page.module.scss'
-import Sugarpunch from 'next/font/local'
+// import Sugarpunch from 'next/font/local'
 import Project from './components/Project'
 
 import { SiJavascript, SiCss3, SiHtml5, SiNodedotjs, SiPostgresql, SiReact, SiTypescript, SiWebgl, SiShopify, SiSass, SiGithub, SiLinkedin } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
-const sugarpunch = Sugarpunch({ src: '../../public/fonts/Sugarpunch.otf' });
+// const sugarpunch = Sugarpunch({ src: '../../public/fonts/Sugarpunch.otf' });
 
 const projects = [
   {
     title: 'HyperBattle',
+    slug: 'hyperbattle',
     description: 'A 2D fighting game with animations and multiple attacks. Made with JavaScript and the HTML canvas element.',
     image: '/img/projects/hyperbattle/jungle.png',
     technologies: [SiJavascript, SiCss3, SiHtml5],
@@ -18,6 +19,7 @@ const projects = [
   },
   {
     title: 'To-Do App',
+    slug: 'todo',
     description: 'A simple to-do app where i built a full backend with all CRUD operations needed as well as a full user authentication system.',
     image: '/img/projects/todo/todos.png',
     technologies: [SiNodedotjs, SiPostgresql, SiReact],
@@ -26,6 +28,7 @@ const projects = [
   },
   {
     title: 'Kaleidoscope',
+    slug: 'kaleidoscope',
     description: 'A kalidoscope generator built using GLSL code as well as React and Typescript.',
     image: '/img/projects/kaleidoscope/kaleidoscope.png',
     technologies: [SiReact, SiTypescript, SiWebgl],
@@ -34,6 +37,7 @@ const projects = [
   },
   {
     title: 'Classified App',
+    slug: 'react-native',
     description: 'A client project made with React Naive. NDA signed.',
     image: '/img/projects/classified/list.PNG',
     technologies: [SiReact],
@@ -42,6 +46,7 @@ const projects = [
   },
   {
     title: 'Shopify Theme',
+    slug: 'shopify-theme',
     description: 'A shopify theme made for a single product store. Made with Shopify Liquid.',
     image: '/img/projects/heltra/computer.png',
     technologies: [SiShopify, SiSass],
@@ -80,7 +85,6 @@ export default function Home() {
       <section className={styles.projects}>
         <h2>projects</h2>
         {projects.map((project, index) => <Project key={index} project={project}>
-          {project.technologies.map((Element, index) => <Element key={index} size={27} />)}
         </Project>)}
 
       </section>
@@ -97,7 +101,7 @@ export default function Home() {
         </div>
         <div className={styles.aboutSection}>
           <Image src='/img/fabian/jamtland.jpg' width={576} height={384} alt="Fabian Genell i  natur" />
-          <div>
+          <div className={styles.hobbylist}>
             <strong>Outside of coding I enjoy</strong>
             <ul>
               <li>Documentary Film</li>

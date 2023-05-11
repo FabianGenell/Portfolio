@@ -92,15 +92,13 @@ section.about {
 
     .aboutSection {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       gap: 0px;
 
         p,img {
             margin: 10px 0;
           }
-        :first-child {
-          // order: 1;
-        }
+
     }
 
   img {
@@ -120,6 +118,7 @@ section.about {
 nav.contact {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
   padding-bottom: 50px;
 
@@ -196,10 +195,26 @@ nav.contact {
 
     section.about {
       .aboutSection{
-        flex-direction: row;
+        flex-direction: row-reverse;
+        justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 100px;
 
+        &:nth-child(odd){
+          flex-direction: row;
+        }
+
+        p {
+          margin: 30px 0;
+        }
+        img {
+          max-width: 50%;
+          
+        }
+
+        .hobbylist {
+          margin: 0 0px;
+        }
         
       }
 
