@@ -40,7 +40,6 @@ main.projectpage {
 
         h3 {
             font-size: 9vw;
-            text-align: center;
         }
 
         p {
@@ -59,7 +58,7 @@ main.projectpage {
 @media  (min-width: 1100px){
     main.projectpage {
         gap: 120px;
-        max-width: 1500px;
+        max-width: 1300px;
 
 
         .textRow {
@@ -79,7 +78,7 @@ main.projectpage {
                 line-height: 100%;
             }
             p {
-                font-size: 28px;
+                font-size: 24px;
             }
         }
     }
@@ -91,7 +90,7 @@ main.projectpage {
     main.projectpage {
 
         h1 {
-            font-size: 130px;
+            font-size: 100px;
         }
 
         p {

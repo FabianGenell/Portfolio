@@ -37,7 +37,7 @@ const projects = [
   },
   {
     title: 'Classified App',
-    slug: 'react-native',
+    slug: undefined,
     description: 'A client project made with React Naive. NDA signed.',
     image: '/img/projects/classified/list.PNG',
     technologies: [SiReact],
@@ -46,7 +46,7 @@ const projects = [
   },
   {
     title: 'Shopify Theme',
-    slug: 'shopify-theme',
+    slug: undefined,
     description: 'A shopify theme made for a single product store. Made with Shopify Liquid.',
     image: '/img/projects/heltra/computer.png',
     technologies: [SiShopify, SiSass],
