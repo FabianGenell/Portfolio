@@ -78,7 +78,7 @@ export default function Home() {
           </div>
         </div>
 
-        <a className={styles.button} href='https://www.linkedin.com/in/fabian-genell-0a4686246/' target='_blank' >Contact Me</a>
+        <a className={styles.button} href='mailto:fabian.genell@hyperisland.se'  >Contact Me</a>
 
       </section>
 
@@ -119,7 +119,7 @@ export default function Home() {
 
       <nav className={styles.contact}>
         <h2>contact</h2>
-        <a href='mailto:fabian.genell@hyperisland.se' target='_blank' className={styles.button}> <MdEmail /> Email</a>
+        <a href='mailto:fabian.genell@hyperisland.se' className={styles.button}> <MdEmail /> Email</a>
         <a href='https://github.com/FabianGenell/' target='_blank' className={styles.button}> <SiGithub /> Github</a>
         <a href='https://www.linkedin.com/in/fabian-genell-0a4686246/' target='_blank' className={styles.button}><SiLinkedin /> LinkedIn</a>
       </nav>
