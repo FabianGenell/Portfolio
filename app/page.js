@@ -69,7 +69,7 @@ export default function Home() {
           <div className={styles.videoContainer}>
             <iframe
               title="vimeo-player"
-              src='https://player.vimeo.com/video/826104254'
+              src='https://player.vimeo.com/video/829949085'
               frameborder="0"
               allowfullscreen
               className={styles.video}
