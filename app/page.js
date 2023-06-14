@@ -3,7 +3,7 @@ import styles from './page.module.scss'
 // import Sugarpunch from 'next/font/local'
 import Project from './components/Project'
 
-import { SiJavascript, SiCss3, SiHtml5, SiNodedotjs, SiPostgresql, SiReact, SiTypescript, SiWebgl, SiShopify, SiSass, SiGithub, SiLinkedin } from 'react-icons/si'
+import { SiJavascript, SiCss3, SiHtml5, SiNodedotjs, SiPostgresql, SiReact, SiTypescript, SiWebgl, SiShopify, SiSass, SiGithub, SiLinkedin, SiTensorflow } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
 // const sugarpunch = Sugarpunch({ src: '../../public/fonts/Sugarpunch.otf' });
 
@@ -34,6 +34,15 @@ const projects = [
     technologies: [SiReact, SiTypescript, SiWebgl],
     live: 'http://kaleidoscope.fabiangenell.com/',
     github: 'https://github.com/FabianGenell/kaleidoscope-generator',
+  },
+  {
+    title: 'Shader Synth',
+    slug: undefined,
+    description: 'A synth built with tone js using tensorflow to control the synth with your hand, visualized by a GLSL shader.',
+    image: '/img/projects/shader-synth/shader-synth-1.png',
+    technologies: [SiReact, SiWebgl, SiTensorflow],
+    live: 'https://shader-synth.netlify.app/',
+    github: 'https://github.com/staffanosp/tone_js_react',
   },
   {
     title: 'Classified App',
