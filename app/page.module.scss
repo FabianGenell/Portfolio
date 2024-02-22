@@ -20,7 +20,9 @@ main.main {
   }
 
   h1,
-  h2 {
+  h2,
+  .h1,
+  .h2 {
     font-family: $heading-font;
     font-weight: 700;
     text-align: center;
@@ -28,19 +30,32 @@ main.main {
     letter-spacing: 0.15em;
   }
 
-  h1 {
+  h1,
+  .h1 {
     font-size: 22vw;
   }
 
+  .h1 span,
   h1 span {
     font-size: 8vw;
     letter-spacing: normal;
   }
 
-  h2 {
+  h2,
+  .h2 {
     font-size: 15vw;
     margin-bottom: 30px;
   }
+
+  .mini-heading {
+    font-family: $heading-font;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.25;
+    letter-spacing: 0.15em;
+    font-size: 8vw;
+    letter-spacing: normal;
+  }  
 
   .button {
     width: 100%;
@@ -132,7 +147,8 @@ nav.contact {
 
 @media (min-width: 850px) {
   main.main {
-    h1 {
+    h1,
+    .h1 {
       font-size: 22vb;
 
       span {
@@ -140,7 +156,8 @@ nav.contact {
       }
     }
 
-    h2 {
+    h2,
+    .h2 {
       font-size: 15vb;
     }
   }
@@ -152,7 +169,8 @@ nav.contact {
     margin-top: 6vw;
     gap: 200px;
 
-    h1 {
+    h1,
+    .h1 {
       font-size: 130px;
 
       span {
@@ -160,7 +178,8 @@ nav.contact {
       }
     }
 
-    h2 {
+    h2,
+    .h2 {
       font-size: 90px;
     }
 
@@ -217,4 +236,3 @@ nav.contact {
     }
   }
 }
-

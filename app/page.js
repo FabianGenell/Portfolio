@@ -52,7 +52,7 @@ const projects = [
     technologies: [SiReact],
     live: undefined,
     github: undefined,
-  },
+  }, 
   {
     title: 'Shopify Theme',
     slug: undefined,
@@ -71,7 +71,7 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.mainContainer}>
           <h1>
-            <span>Hi , I’m</span><br />
+            <span>Hi , I’m</span> <br />
             Fabian<br />Genell
           </h1>
 
@@ -92,7 +92,7 @@ export default function Home() {
       </section>
 
       <section className={styles.projects}>
-        <h2>projects</h2>
+        <h2>Shopify<br/> Projects</h2>
         {projects.map((project, index) => <Project key={index} project={project} />)}
 
       </section>
