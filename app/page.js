@@ -105,35 +105,6 @@ export default function Home() {
 
       </section>
 
-      <section className={styles.about}>
-        <h2>about me</h2>
-        <div className={styles.aboutSection}>
-          <Image src='/img/fabian/italy-lagonegro.png' width={300} height={300} alt="Fabian Genell" />
-          <div>
-            <p>My name is Fabian. I’m a 21 year old guy from Sweden. I am currently studying Frontend Development at HYPER ISLAND.</p>
-            <p>But, I’ve actually been coding since I was 12 when I wanted upgrade my minecraft server so I was forced to dive in to Java.</p>
-            <p>Although I didn’t touch code for a couple of years I’ve found my way back but this time to web development.</p>
-          </div>
-        </div>
-        <div className={styles.aboutSection}>
-          <Image src='/img/fabian/jamtland.jpg' width={576} height={384} alt="Fabian Genell i  natur" />
-          <div className={styles.hobbylist}>
-            <strong>Outside of coding I enjoy</strong>
-            <ul>
-              <li>Documentary Film</li>
-              <li>Photography</li>
-              <li>Exercising</li>
-              <li>Muay Thai</li>
-              <li>Sales & Marketing</li>
-              <li>Business</li>
-            </ul>
-          </div>
-        </div>
-
-
-
-      </section>
-
       <nav className={styles.contact}>
         <h2>contact</h2>
         <a href='mailto:fabian.genell@hyperisland.se' className={styles.button}> <MdEmail /> Email</a>
