@@ -1,23 +1,8 @@
 import styles from './page.module.scss';
-import Project from './components/Project';
-
-import {
-    SiJavascript,
-    SiCss3,
-    SiHtml5,
-    SiNodedotjs,
-    SiPostgresql,
-    SiReact,
-    SiTypescript,
-    SiWebgl,
-    SiShopify,
-    SiSass,
-    SiGithub,
-    SiLinkedin,
-    SiTensorflow,
-} from 'react-icons/si';
+import { SiGithub, SiLinkedin } from 'react-icons/si';
 import { MdEmail } from 'react-icons/md';
 import Service from './components/Service';
+import Image from 'next/image';
 
 const services = [
     {
@@ -126,6 +111,7 @@ export default function Home() {
                             allowfullscreen
                             className={styles.video}
                         ></iframe>
+                        <Image src="./img/shopify/ShopifyPlus_Secondary_Inverted.svg" width={300} height={50} />
                     </div>
                 </div>
 
@@ -142,7 +128,7 @@ export default function Home() {
                 ))}
             </section>
 
-{/*             <section className={styles.projects}>
+            {/*             <section className={styles.projects}>
                 <h2>
                     Shopify
                     <br /> Projects
