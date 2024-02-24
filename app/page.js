@@ -5,6 +5,7 @@ import Project from './components/Project'
 
 import { SiJavascript, SiCss3, SiHtml5, SiNodedotjs, SiPostgresql, SiReact, SiTypescript, SiWebgl, SiShopify, SiSass, SiGithub, SiLinkedin, SiTensorflow } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
+import Service from './components/Service'
 // const sugarpunch = Sugarpunch({ src: '../../public/fonts/Sugarpunch.otf' });
 
 const projects = [
@@ -88,6 +89,13 @@ export default function Home() {
         </div>
 
         <a className={styles.button} href='mailto:fabian.genell@hyperisland.se'  >Contact Me</a>
+
+      </section>
+
+      <section>
+      <h2>Services</h2>
+
+        <Service/>
 
       </section>
 
