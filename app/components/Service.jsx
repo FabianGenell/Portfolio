@@ -20,7 +20,7 @@ export default function Service({service}) {
             <h3>{service.title}</h3>
             <p>{service.description}</p>
         </div>
-         <a className={styles.button} target='_blank' href='GOOGLE.COM'>GET IN CONTACT</a>
+         <a className={styles.button} target='_blank' href='https://ilwlpt1vps4.typeform.com/to/skBV1lx8'>GET IN CONTACT</a>
 
         {service.slug && <Link href={`/service/${service.slug}`} className={styles.moreInfo}>MORE INFO <BiRightArrowAlt size={20} /></Link>}
         </div>
